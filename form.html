@@ -1,372 +1,386 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Formulário de Cadastro de alunos</title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-		
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
+
 <body>
-<div class="container">
-<div class="stepwizard">
-    <div class="stepwizard-row setup-panel">
+  <div class="container">
+    <div class="stepwizard">
+      <div class="stepwizard-row setup-panel">
         <div class="stepwizard-step">
-            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-            <p>Cadastro de <br> Alunos</p>
+          <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+          <p>Cadastro de <br> Alunos</p>
         </div>
         <div class="stepwizard-step">
-            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-            <p>Dados <br>Pessoais</p>
+          <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+          <p>Dados <br>Pessoais</p>
         </div>
         <div class="stepwizard-step">
-            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-            <p>Dados <br> Socioeconômico</p>
+          <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+          <p>Dados <br> Socioeconômico</p>
         </div>
         <div class="stepwizard-step">
-            <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-            <p>Documentos<br>Escaneados</p>
+          <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+          <p>Documentos<br>Escaneados</p>
         </div>
         <div class="stepwizard-step">
-            <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
-            <p>Completo</p>
+          <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+          <p>Completo</p>
         </div>
+      </div>
     </div>
-</div>
-<form role="form">
-    <div class="row setup-content" id="step-1">
+    <form role="form">
+      <div class="row setup-content" id="step-1">
         <div class="container">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
+          <div class="col-md-12">
+            <h3>Cadastro de alunos</h3>
+            <div class="row">
+              <div class="col-md-6">
                 <div class="form-group">
-                    <label class="control-label">Número de Inscrição</label>
-                    <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Número de inscrição do aluno"  />
+                  <label class="control-label">Número de Inscrição</label>
+                  <input maxlength="100" type="text" required="required" class="form-control" placeholder="Número de inscrição do aluno" />
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Horário do curso</label>
-                    <input type="text" required="required" class="form-control input-md" placeholder="Digite o horário do curso" />
-                </div>  
-                <div class="form-group">
-                            <label class="control-label">Instrutor</label>
-                            <input  type="text" class="form-control input-md" placeholder="Nome do Instrutor" />
-                        </div>              
-                        
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                            <label class="control-label">Curso</label>
-                            <input  type="text" required="required" class="form-control input-md" placeholder="Nome do curso" />
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="control-label">Período</label>
-                            <input  type="text" required="required" class="form-control input-md" placeholder="Período do curso" />
-                        </div>          
-                        
-                    </div>
-                    
+                  <label class="control-label">Horário do curso</label>
+                  <input type="text" required="required" class="form-control input-md" placeholder="Digite o horário do curso" />
                 </div>
-                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Seguinte</button>
+                <div class="form-group">
+                  <label class="control-label">Instrutor</label>
+                  <input type="text" class="form-control input-md" placeholder="Nome do Instrutor" />
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label">Curso</label>
+                  <input type="text" required="required" class="form-control input-md" placeholder="Nome do curso" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Período</label>
+                  <input type="text" required="required" class="form-control input-md" placeholder="Período do curso" />
+                </div>
+
+              </div>
+
             </div>
+            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Seguinte</button>
+          </div>
         </div>
-    </div>
-    <div class="row setup-content" id="step-2">
-            <div class="container">
-                <div class="row">
-                	 <div class="col-md-12">
-		                  <div class="form-group">
-		                          <label class="control-label" for="nome">Nome completo</label>  
-		                          <input id="nome" name="nome" type="text" placeholder="Digite o nome completo do aluno" class="form-control input-md" required="">
-		                    </div>
-		               </div>
-
-                        <!-- Text input-->
-                        <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="col-md-4 control-label" for="email">Email</label>  
-                          <input id="email" name="email" type="email" placeholder="Digite aqui o seu email" class="form-control input-md">
-                         </div>
-                     	</div>
-
-                        <div class="col-md-6">
-                            <!-- Text input-->
-                                <div class="form-group">
-                                  <label class="control-label" for="telefone">Telefone</label>  
-                                  <input id="telefone" name="telefone" type="text" placeholder="Digite seu telefone " class="form-control input-md">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Text input-->
-                                <div class="form-group">
-                                  <label class="control-label" for="celular">Celular</label>  
-                                  <input id="celular" name="celular" type="text" placeholder="Digite o numero do celular" class="form-control input-md" required="">
-                                </div>
-                            </div>
-
-                        <!-- Multiple Radios (inline) -->
-                        <div class="form-group">
-                          <label class="col-md-4 control-label" for="sexo">Sexo: </label>
-                          <div class="col-md-6"> 
-                            <label class="radio-inline" for="sexo-0">
-                              <input type="radio" name="sexo" id="sexo-0" value="Masculino" checked="checked">
-                              Masculino
-                            </label> 
-                            <label class="radio-inline" for="sexo-1">
-                              <input type="radio" name="sexo" id="sexo-1" value="Feminino">
-                              Feminino
-                            </label> 
-                            <label class="radio-inline" for="sexo-2">
-                              <input type="radio" name="sexo" id="sexo-2" value="Indefinido">
-                              Indefinido
-                            </label>
-                          </div>
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="col-md-12">
-                        <div class="form-group">
-                          <label control-label for="mae">Mãe</label>  
-                          <input id="mae" name="mae" type="text" placeholder="Nome da mãe do aluno" class="form-control input-md">
-                        </div>   
-                        </div>                         
-                        <div class="col-md-6">
-                            <!-- Text input-->
-                                <div class="form-group">
-                                  <label class="control-label" for="telefone">Naturalidade</label>  
-                                  <input id="naturalidade" name="naturalidade" type="text" placeholder="Naturalidade do aluno" class="form-control input-md">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Text input-->
-                                <div class="form-group">
-                                  <label class="control-label" for="nacionalidade">Nacionalidade</label>  
-                                  <input id="nacionalidade" name="nacionalidade" type="text" placeholder="Nacionalidade do aluno" class="form-control input-md">
-                                </div>  
-                            </div>
-                            <div class="col-md-12">
-                            	<h3>Documentação</h3>
-                        	</div>
-                            <div class="col-md-6">
-		                        <div class="form-group">
-		                          RG: <input id="rg" name="rg" type="text" placeholder="Digite aqui o seu RG" class="form-control">
-		                         </div>
-		                     </div>
-		                     <div class="col-md-6 p5">
-		                          Orgão Emissor: <input id="orgao-emissor" name="emissor" type="radio" value="SSP">SSP
-		                          <input id="orgao-emissor" name="emissor" type="radio" value="Outros">Outros
-		                      </div>
-		                       <div class="col-md-6">
-		                        <div class="form-group">
-		                          CPF: <input id="cpf" name="CPF" type="text" placeholder="Digite aqui o seu CPF" class="form-control">
-		                         </div>
-		                      </div>form-control input-md
-		                       <div class="col-md-6">
-		                        <div class="form-group">
-		                          Data de nascimento: <input id="dn" name="data-nasc" type="date" placeholder="Digite aqui o seu RG" class="form-control">
-		                         </div>
-		                     </div>
-		                     <div class="col-md-12">
-                                <!-- Text input-->
-                                <div class="form-group">
-                                  <label class="control-label" for="nacionalidade"><h3>Estado Civil</h3></label>  <br>
-                                   <input id="estadocivil" name="estadoCivil" type="radio" value="Solteiro">Solteiro
-                                  <input id="estadocivil" name="estadoCivil" type="radio" value="Casado">Casado
-                                  <input id="estadocivil" name="estadoCivil" type="radio" value="Divorciado">Divorciado
-                                  <input id="estadocivil" name="estadoCivil" type="radio" value="Viúvo">Viúvo
-                                  <input id="estadocivil" name="estadoCivil" type="radio" value="União estável">União estável
-                                  <input id="estadocivil" name="estadoCivil" type="radio" value="Outros">Outros
-                                </div>  
-                            </div>
-                            	<div class="col-md-12">
-                                <!-- Text input-->
-                                <div class="form-group">
-                                  <label class="control-label" for="nacionalidade"><h3>Raça/ Cor</h3></label>  <br>
-                                   <input id="estadocivil" name="raca" type="radio" value="Branca">Branca
-                                  <input id="estadocivil" name="raca" type="radio" value="Negra">Negra
-                                  <input id="estadocivil" name="raca" type="radio" value="Parda">Parda
-                                  <input id="estadocivil" name="raca" type="radio" value="Amarela">Amarela
-                                  <input id="estadocivil" name="raca" type="radio" value="Não informada">Não informada
-                                </div> 
-                                </div>
-                                 <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label class="control-label" for="def"><h3>Deficiência</h3></label>  <br>
-                                           <input id="def1" name="deficiencia" typform-control input-mde="radio" value="Sim">Sim
-                                          <input id="def2" name="deficiencia" type="radio" value="Não">Não
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label class="control-label" for="def">Se respondeu sim. Qual?</label>  
-                                          <input id="def" name="def" type="text" placeholder="Deficiencia. Ex. Visual , Auditiva, Locomoção, etc." class="form-control input-md">
-                                        </div>  
-                                    </div> 
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label class="control-label" for="def"><h3>Alergias</h3></label>  <br>
-                                           <input id="alergias" name="deficiencia" type="radio" value="Sim">Sim
-                                          <input id="alergias" name="deficiencia" type="radio" value="Não">Não
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label class="control-label" for="alergia">Se respondeu sim. Qual?</label>  
-                                          <input id="def" name="def" type="text" placeholder="Se respondeu sim, defina o tipo ou os tipos de alergias" class="form-control input-md">
-                                        </div>  
-                                    </div> 
-                                </div>
-
-
-
-                </div>
-                <button id="nextBtn" class="btn btn-primary  btn-lg pull-right" type="button" >Seguinte</button>
-        </div>
-    </div>
-    <div class="row setup-content" id="step-3">
+      </div>
+      <div class="row setup-content" id="step-2">
         <div class="container">
+          <div class="row">
             <div class="col-md-12">
-                <h3> Dados Sócioeconômicos</h3>
-                <div class="form-group">
-                    <label class="control-label">1. Sua moradia é:</label><br>
-                    <input type="radio" name="moradia" value="Própria"> Própria
-                    <input type="radio" name="moradia" value="Cedida"> Cedida
-                    <input type="radio" name="moradia" value="Alugada"> Alugada
-                    <input type="radio" name="moradia" value="Outros"> Outros
-                </div>
-                <div class="form-group">
-                    <label class="control-label">2. Quantas pessoas moram com você (Incluindo familiares, parentes e outros):</label><br>
-                    <input type="radio" name="quantPessoas" value="0"> 0
-                    <input type="radio" name="quantPessoas" value="1 a 3"> 1 a 3
-                    <input type="radio" name="quantPessoas" value="3 a 5"> 3 a 5
-                    <input type="radio" name="quantPessoas" value="5 a 7"> 5 a 7
-                    <input type="radio" name="quantPessoas" value="Acima de 7"> Acima de 7
-                </div>
-                <div class="form-group">
-                    <label class="control-label">3. Qual alternativa a seguir melhor descreve a sua situação financeira?</label><br> 
-                    <input type="radio" name="sitFinanceira" value="Não tenho renda e meus gastos são financiados por familiares ou outros"> Não tenho renda e meus gastos são financiados por familiares ou outros<br>
-                    <input type="radio" name="sitFinanceira" value="Não tenho renda e meus gastos são financiados por programas governamentais"> Não tenho renda e meus gastos são financiados por programas governamentais<br>
-                    <input type="radio" name="sitFinanceira" value="Não tenho renda proveniente de qualquer fonte."> Não tenho renda proveniente de qualquer fonte.<br>
-                    <input type="radio" name="sitFinanceira" value="Tenho renda, mas recebo ajuda da família ou outros para custear meus gastos."> Tenho renda, mas recebo ajuda da família ou outros para custear meus gastos.<br>
-                    <input type="radio" name="sitFinanceira" value="Tenho renda e não preciso de ajuda para custear meus gastos."> Tenho renda e não preciso de ajuda para custear meus gastos.<br>
-                    <input type="radio" name="sitFinanceira" value="Tenho renda e componho a renda geral da família"> Tenho renda e componho a renda geral da família<br>
-                    <input type="radio" name="sitFinanceira" value="Tenho renda e sou o principal sustento da família"> Tenho renda e sou o principal sustento da família<br>
-                    <div class="form-group">
-                    <label class="control-label">Caso trabalhe, qual função/profissão você exerce?</label>
-                    <input type="text" required="required" class="form-control" placeholder="Fale aqui sobre a sua profissão" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label">4. Assinale a alternativa que melhor representa a sua renda: </label><br>
-                    <input type="radio" name="renda" value="Carteira assinada"> Carteira assinada
-                    <input type="radio" name="renda" value="Aposentadoria"> Aposentadoria
-                    <input type="radio" name="renda" value="Benefício governamental"> Benefício governamental
-                    <input type="radio" name="renda" value="Autônomo"> Autônomo                    
-                </div>
-                <div class="form-group">
-                    <label class="control-label">5. Qual a renda mensal da sua família (Somada a renda de todos os presentes que contribuem na casa): </label><br>
-                    <input type="radio" name="rendaFamiliar" value="Até 01 salário"> Até 01 salário
-                    <input type="radio" name="rendaFamiliar" value="02 a 04 Salários"> 02 a 04 Salários
-                    <input type="radio" name="rendaFamiliar" value="04 a 06 Salários"> 04 a 06 Salários
-                    <input type="radio" name="rendaFamiliar" value="06 Salários ou mais"> 06 Salários ou mais<br>
-                </div>
-                <div class="form-group">
-                    <label class="control-label">6. Qual seu nível educacional? (Selecione a opção com o nível e sua situação atual) </label><br>
-                    <div class="col-md-6">
-                    <select class="form-control">
-                        <option>Fundamental completo</option>
-                        <option>Fundamental incompleto</option>
-                        <option>Fundamental em andamento</option>
-                        <option>Médio Completo</option>
-                        <option>Médio incompleto</option>
-                        <option>Médio em andamento</option>
-                        <option>Superior completo</option>
-                        <option>Superio incompleto</option>
-                        <option>Superior em andamento</option>
-                        <option>Pós Graduação Completa</option>
-                        <option>Pós graduação em andamento</option>
-                    </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label">7. Em que tipo de instituição de ensino você estudou ou estuda? </label><br>
-                    <input type="radio" name="instituicaoEscolar" value="Apenas em instituições públicas"> Apenas em instituições públicas<br>
-                    <input type="radio" name="instituicaoEscolar" value="A maior parte em instituição pública."> A maior parte em instituição pública.<br>
-                    <input type="radio" name="instituicaoEscolar" value="Apenas em instituições particulares."> Apenas em instituições particulares.<br>
-                    <input type="radio" name="instituicaoEscolar" value="A maior parte em instituições particulares"> A maior parte em instituições particulares<br>
-                    <input type="radio" name="instituicaoEscolar" value="Boa parte no Brasil e outra parte no exterior."> Boa parte no Brasil e outra parte no exterior.<br>
-                </div>
-                <div class="form-group">
-                    <label class="control-label">8. Qual o principal motivo para você ter escolhido o curso? </label><br>
-                    <input type="radio" name="motivoDeEscolha" value="Inserção no mercado de trabalho"> Inserção no mercado de trabalho<br>
-                    <input type="radio" name="motivoDeEscolha" value="Qualificação/ Atualização profissional"> Qualificação/ Atualização profissional<br>
-                    <input type="radio" name="motivoDeEscolha" value="Indicação de conhecidos"> Indicação de conhecidos<br>
-                    <input type="radio" name="motivoDeEscolha" value="Gratuidade"> Gratuidade<br>
-                    <input type="radio" name="motivoDeEscolha" value="Proximidade de trabalho/ Casa"> Proximidade de trabalho/ Casa<br>
-                    <input type="radio" name="motivoDeEscolha" value="Outros"> Outros<br>
-                    <div class="form-group">
-                    <label class="control-label">Diga-nos qual:</label>
-                    <input type="text" required="required" class="form-control" placeholder="Fale aqui sobre o motivo de sua escolha." />
-                </div>
-
-                </div>
-
-                <button id="nextBtn" class="btn btn-primary  btn-lg pull-right" type="button" >Seguinte</button>
+              <h3>Dados Pessoais</h3>
+              <div class="form-group">
+                <label class="control-label" for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o nome completo do aluno" class="form-control input-md" required="">
+              </div>
             </div>
-        </div>
-    </div>
-       <div class="row setup-content" id="step-4">
-            <div class="col-md-12">
-                <h3> Documentação</h3>
-                <div class="container">        
-                <div class="form-group">
-                    <h3>Foto identidade frente</h3>
-                    <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="image">
-                </div>
-                <div class="form-group">
-                    <h3>Foto identidade trás</h3>
-                    <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="image">
-                </div>
-                <div class="form-group">
-                    <h3>Ficha de inscrição</h3>
-                    <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="text">
-                </div>
-                <div class="form-group">
-                    <h3>Comprovante de endereço</h3>
-                    <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="text">
-                </div>
-                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Seguinte</button>
-            
-        </div>
-        </div>
-    </div>
-    <div class="row setup-content" id="step-6">
-            <div class="col-md-12">
-                <h3> Formulario</h3>
-  
-                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Seguinte</button>
-            </div>
-        </div>
-    </div>
-    <div class="row setup-content" id="step-5">
-        <div class="col-xs-12">
-            <div class="col-md-12">
-                <h3> Fomulario Preenchido com sucesso!!!</h3>
-                <button class="btn btn-success btn-lg pull-right" type="submit">Enviar</button>
-            </div>
-        </div>
-    </div>
-</form>
-</div>
 
-		 <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>       
-        <script type="text/javascript" src="js/main.js"></script>  
+            <!-- Text input-->
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Digite aqui o seu email" class="form-control input-md">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="text" placeholder="Digite seu telefone " class="form-control input-md">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="celular">Celular</label>
+                <input id="celular" name="celular" type="text" placeholder="Digite o numero do celular" class="form-control input-md" required="">
+              </div>
+            </div>
+
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="sexo">Sexo: </label>
+              <div class="col-md-6">
+                <label class="radio-inline" for="sexo-0">
+                  <input type="radio" name="sexo" id="sexo-0" value="Masculino" checked="checked">
+                  Masculino
+                </label>
+                <label class="radio-inline" for="sexo-1">
+                  <input type="radio" name="sexo" id="sexo-1" value="Feminino">
+                  Feminino
+                </label>
+                <label class="radio-inline" for="sexo-2">
+                  <input type="radio" name="sexo" id="sexo-2" value="Indefinido">
+                  Indefinido
+                </label>
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="col-md-12">
+              <div class="form-group">
+                <label control-label for="mae">Mãe</label>
+                <input id="mae" name="mae" type="text" placeholder="Nome da mãe do aluno" class="form-control input-md">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="telefone">Naturalidade</label>
+                <input id="naturalidade" name="naturalidade" type="text" placeholder="Naturalidade do aluno" class="form-control input-md">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="nacionalidade">Nacionalidade</label>
+                <input id="nacionalidade" name="nacionalidade" type="text" placeholder="Nacionalidade do aluno" class="form-control input-md">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <h3>Documentação</h3>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                RG: <input id="rg" name="rg" type="text" placeholder="Digite aqui o seu RG" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6 p5">
+              Orgão Emissor: <input id="orgao-emissor" name="emissor" type="radio" value="SSP">SSP
+              <input id="orgao-emissor" name="emissor" type="radio" value="Outros">Outros
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                CPF: <input id="cpf" name="CPF" type="text" placeholder="Digite aqui o seu CPF" class="form-control">
+              </div>
+            </div>form-control input-md
+            <div class="col-md-6">
+              <div class="form-group">
+                Data de nascimento: <input id="dn" name="data-nasc" type="date" placeholder="Digite aqui o seu RG" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="nacionalidade">
+                  <h3>Estado Civil</h3>
+                </label> <br>
+                <input id="estadocivil" name="estadoCivil" type="radio" value="Solteiro">Solteiro
+                <input id="estadocivil" name="estadoCivil" type="radio" value="Casado">Casado
+                <input id="estadocivil" name="estadoCivil" type="radio" value="Divorciado">Divorciado
+                <input id="estadocivil" name="estadoCivil" type="radio" value="Viúvo">Viúvo
+                <input id="estadocivil" name="estadoCivil" type="radio" value="União estável">União estável
+                <input id="estadocivil" name="estadoCivil" type="radio" value="Outros">Outros
+              </div>
+            </div>
+            <div class="col-md-12">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="nacionalidade">
+                  <h3>Raça/ Cor</h3>
+                </label> <br>
+                <input id="estadocivil" name="raca" type="radio" value="Branca">Branca
+                <input id="estadocivil" name="raca" type="radio" value="Negra">Negra
+                <input id="estadocivil" name="raca" type="radio" value="Parda">Parda
+                <input id="estadocivil" name="raca" type="radio" value="Amarela">Amarela
+                <input id="estadocivil" name="raca" type="radio" value="Não informada">Não informada
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="def">
+                  <h3>Deficiência</h3>
+                </label> <br>
+                <input id="def1" name="deficiencia" typform-control input-mde="radio" value="Sim">Sim
+                <input id="def2" name="deficiencia" type="radio" value="Não">Não
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="def">Se respondeu sim. Qual?</label>
+                <input id="def" name="def" type="text" placeholder="Deficiencia. Ex. Visual , Auditiva, Locomoção, etc." class="form-control input-md">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="def">
+                  <h3>Alergias</h3>
+                </label> <br>
+                <input id="alergias" name="deficiencia" type="radio" value="Sim">Sim
+                <input id="alergias" name="deficiencia" type="radio" value="Não">Não
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="alergia">Se respondeu sim. Qual?</label>
+                <input id="def" name="def" type="text" placeholder="Se respondeu sim, defina o tipo ou os tipos de alergias" class="form-control input-md">
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <button id="nextBtn" class="btn btn-primary  btn-lg pull-right" type="button">Seguinte</button>
+      </div>
+  </div>
+  <div class="row setup-content" id="step-3">
+    <div class="container">
+      <div class="col-md-12">
+        <h3> Dados Sócioeconômicos</h3>
+        <div class="form-group">
+          <label class="control-label">1. Sua moradia é:</label><br>
+          <input type="radio" name="moradia" value="Própria"> Própria
+          <input type="radio" name="moradia" value="Cedida"> Cedida
+          <input type="radio" name="moradia" value="Alugada"> Alugada
+          <input type="radio" name="moradia" value="Outros"> Outros
+        </div>
+        <div class="form-group">
+          <label class="control-label">2. Quantas pessoas moram com você (Incluindo familiares, parentes e outros):</label><br>
+          <input type="radio" name="quantPessoas" value="0"> 0
+          <input type="radio" name="quantPessoas" value="1 a 3"> 1 a 3
+          <input type="radio" name="quantPessoas" value="3 a 5"> 3 a 5
+          <input type="radio" name="quantPessoas" value="5 a 7"> 5 a 7
+          <input type="radio" name="quantPessoas" value="Acima de 7"> Acima de 7
+        </div>
+        <div class="form-group">
+          <label class="control-label">3. Qual alternativa a seguir melhor descreve a sua situação financeira?</label><br>
+          <input type="radio" name="sitFinanceira" value="Não tenho renda e meus gastos são financiados por familiares ou outros"> Não tenho renda e meus gastos são financiados por familiares ou outros<br>
+          <input type="radio" name="sitFinanceira" value="Não tenho renda e meus gastos são financiados por programas governamentais"> Não tenho renda e meus gastos são financiados por programas governamentais<br>
+          <input type="radio" name="sitFinanceira" value="Não tenho renda proveniente de qualquer fonte."> Não tenho renda proveniente de qualquer fonte.<br>
+          <input type="radio" name="sitFinanceira" value="Tenho renda, mas recebo ajuda da família ou outros para custear meus gastos."> Tenho renda, mas recebo ajuda da família ou outros para custear meus gastos.<br>
+          <input type="radio" name="sitFinanceira" value="Tenho renda e não preciso de ajuda para custear meus gastos."> Tenho renda e não preciso de ajuda para custear meus gastos.<br>
+          <input type="radio" name="sitFinanceira" value="Tenho renda e componho a renda geral da família"> Tenho renda e componho a renda geral da família<br>
+          <input type="radio" name="sitFinanceira" value="Tenho renda e sou o principal sustento da família"> Tenho renda e sou o principal sustento da família<br>
+          <div class="form-group">
+            <label class="control-label">Caso trabalhe, qual função/profissão você exerce?</label>
+            <input type="text" required="required" class="form-control" placeholder="Fale aqui sobre a sua profissão" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">4. Assinale a alternativa que melhor representa a sua renda: </label><br>
+          <input type="radio" name="renda" value="Carteira assinada"> Carteira assinada
+          <input type="radio" name="renda" value="Aposentadoria"> Aposentadoria
+          <input type="radio" name="renda" value="Benefício governamental"> Benefício governamental
+          <input type="radio" name="renda" value="Autônomo"> Autônomo
+        </div>
+        <div class="form-group">
+          <label class="control-label">5. Qual a renda mensal da sua família (Somada a renda de todos os presentes que contribuem na casa): </label><br>
+          <input type="radio" name="rendaFamiliar" value="Até 01 salário"> Até 01 salário
+          <input type="radio" name="rendaFamiliar" value="02 a 04 Salários"> 02 a 04 Salários
+          <input type="radio" name="rendaFamiliar" value="04 a 06 Salários"> 04 a 06 Salários
+          <input type="radio" name="rendaFamiliar" value="06 Salários ou mais"> 06 Salários ou mais<br>
+        </div>
+        <div class="form-group">
+          <label class="control-label">6. Qual seu nível educacional? (Selecione a opção com o nível e sua situação atual) </label><br>
+          <div class="col-md-6">
+            <select class="form-control">
+              <option>Fundamental completo</option>
+              <option>Fundamental incompleto</option>
+              <option>Fundamental em andamento</option>
+              <option>Médio Completo</option>
+              <option>Médio incompleto</option>
+              <option>Médio em andamento</option>
+              <option>Superior completo</option>
+              <option>Superio incompleto</option>
+              <option>Superior em andamento</option>
+              <option>Pós Graduação Completa</option>
+              <option>Pós graduação em andamento</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">7. Em que tipo de instituição de ensino você estudou ou estuda? </label><br>
+          <input type="radio" name="instituicaoEscolar" value="Apenas em instituições públicas"> Apenas em instituições públicas<br>
+          <input type="radio" name="instituicaoEscolar" value="A maior parte em instituição pública."> A maior parte em instituição pública.<br>
+          <input type="radio" name="instituicaoEscolar" value="Apenas em instituições particulares."> Apenas em instituições particulares.<br>
+          <input type="radio" name="instituicaoEscolar" value="A maior parte em instituições particulares"> A maior parte em instituições particulares<br>
+          <input type="radio" name="instituicaoEscolar" value="Boa parte no Brasil e outra parte no exterior."> Boa parte no Brasil e outra parte no exterior.<br>
+        </div>
+        <div class="form-group">
+          <label class="control-label">8. Qual o principal motivo para você ter escolhido o curso? </label><br>
+          <input type="radio" name="motivoDeEscolha" value="Inserção no mercado de trabalho"> Inserção no mercado de trabalho<br>
+          <input type="radio" name="motivoDeEscolha" value="Qualificação/ Atualização profissional"> Qualificação/ Atualização profissional<br>
+          <input type="radio" name="motivoDeEscolha" value="Indicação de conhecidos"> Indicação de conhecidos<br>
+          <input type="radio" name="motivoDeEscolha" value="Gratuidade"> Gratuidade<br>
+          <input type="radio" name="motivoDeEscolha" value="Proximidade de trabalho/ Casa"> Proximidade de trabalho/ Casa<br>
+          <input type="radio" name="motivoDeEscolha" value="Outros"> Outros<br>
+          <div class="form-group">
+            <label class="control-label">Diga-nos qual:</label>
+            <input type="text" required="required" class="form-control" placeholder="Fale aqui sobre o motivo de sua escolha." />
+          </div>
+
+        </div>
+
+        <button id="nextBtn" class="btn btn-primary  btn-lg pull-right" type="button">Seguinte</button>
+      </div>
+    </div>
+  </div>
+  <div class="row setup-content" id="step-4">
+    <div class="container">
+      <div class="col-md-12">
+        <h3> Documentação</h3>
+        <div class="container">
+          <div class="form-group">
+            <h3>Foto identidade frente</h3>
+            <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="image">
+          </div>
+          <div class="form-group">
+            <h3>Foto identidade trás</h3>
+            <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="image">
+          </div>
+          <div class="form-group">
+            <h3>Ficha de inscrição</h3>
+            <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="text">
+          </div>
+          <div class="form-group">
+            <h3>Comprovante de endereço</h3>
+            <input id="file-1" type="file" class="file" multiple=false data-preview-file-type="text">
+          </div>
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Seguinte</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row setup-content" id="step-6">
+    <div class="col-md-12">
+      <h3> Formulario</h3>
+
+      <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Seguinte</button>
+    </div>
+  </div>
+  </div>
+  <div class="row setup-content" id="step-5">
+    <div class="container">
+      <div class="col-xs-12">
+        <div class="col-md-12">
+          <h3> Fomulario Preenchido com sucesso!!!</h3>
+          <button class="btn btn-success btn-lg pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  </div>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
 </html>
-
-
