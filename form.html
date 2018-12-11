@@ -24,14 +24,18 @@
         </div>
         <div class="stepwizard-step">
           <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-          <p>Dados <br> Socioeconômico</p>
+          <p>Endereço</p>
         </div>
         <div class="stepwizard-step">
           <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-          <p>Documentos<br>Escaneados</p>
+          <p>Dados <br> Socioeconômico</p>
         </div>
         <div class="stepwizard-step">
           <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+          <p>Documentos<br>Escaneados</p>
+        </div>
+        <div class="stepwizard-step">
+          <a href="#step-6" type="button" class="btn btn-default btn-circle" disabled="disabled">6</a>
           <p>Completo</p>
         </div>
       </div>
@@ -165,10 +169,10 @@
               <div class="form-group">
                 CPF: <input id="cpf" name="CPF" type="text" placeholder="Digite aqui o seu CPF" class="form-control">
               </div>
-            </div>form-control input-md
+            </div>
             <div class="col-md-6">
               <div class="form-group">
-                Data de nascimento: <input id="dn" name="data-nasc" type="date" placeholder="Digite aqui o seu RG" class="form-control">
+                Data de nascimento: <input id="dn" name="data-nasc" type="date" placeholder="Digite a sua data de nascimento" class="form-control">
               </div>
             </div>
             <div class="col-md-12">
@@ -203,7 +207,7 @@
                 <label class="control-label" for="def">
                   <h3>Deficiência</h3>
                 </label> <br>
-                <input id="def1" name="deficiencia" typform-control input-mde="radio" value="Sim">Sim
+                <input id="def1" name="deficiencia" type="radio" value="Sim">Sim
                 <input id="def2" name="deficiencia" type="radio" value="Não">Não
               </div>
             </div>
@@ -229,14 +233,73 @@
               </div>
             </div>
           </div>
-
-
-
         </div>
         <button id="nextBtn" class="btn btn-primary  btn-lg pull-right" type="button">Seguinte</button>
       </div>
+
+      <div class="row setup-content" id="step-3">
+        <div class="container">
+          <h3>Endereço</h3>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label class="control-label" for="logradouro">Logradouro</label>
+                <input id="logradouro" type="text" name="logradouro" placeholder="Digite o seu endereço" class="form-control input-md" required="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="number">Número</label>
+                <input id="number" type="number" name="number" placeholder="Digite o número" class="form-control input-md" required="">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="form-group">
+                <label class="control-label" for="complemento">Complemento</label>
+                <input id="complemento" type="text" name="complemento" placeholder="Complemento do endereço se houver" class="form-control input-md" required="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="cep">CEP</label>
+                <input id="cep" type="number" name="cep" placeholder="Digite o cep" class="form-control input-md" required="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="bairro">Bairro</label>
+                <input id="bairro" type="text" name="bairro" placeholder="Digite o bairro" class="form-control input-md" required="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="cidade">Cidade</label>
+                <input id="cidade" type="text" name="cidade" placeholder="Digite a Cidade" class="form-control input-md" required="" list="cidades">
+                <datalist id="cidades">
+                <option value="Aquiraz"></option>
+                <option value="Caucaia"></option>
+                <option value="Eusébio"></option>
+                <option value="Fortaleza"></option>
+                <option value="Maracanaú"></option>
+                <option value="Maranguape"></option>              
+              </datalist>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="estado">Estado</label>
+                <input id="estado" type="text" name="estado" placeholder="Digite o Estado" class="form-control input-md" required="">
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Seguinte</button>
+        </div>
+      </div>
   </div>
-  <div class="row setup-content" id="step-3">
+  </div>
+
+
+  <div class="row setup-content" id="step-4">
     <div class="container">
       <div class="col-md-12">
         <h3> Dados Sócioeconômicos</h3>
@@ -329,7 +392,7 @@
       </div>
     </div>
   </div>
-  <div class="row setup-content" id="step-4">
+  <div class="row setup-content" id="step-5">
     <div class="container">
       <div class="col-md-12">
         <h3> Documentação</h3>
@@ -356,15 +419,9 @@
       </div>
     </div>
   </div>
-  <div class="row setup-content" id="step-6">
-    <div class="col-md-12">
-      <h3> Formulario</h3>
 
-      <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Seguinte</button>
-    </div>
-  </div>
-  </div>
-  <div class="row setup-content" id="step-5">
+
+  <div class="row setup-content" id="step-6">
     <div class="container">
       <div class="col-xs-12">
         <div class="col-md-12">
